@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="res2goplugin"/>
+    <Type Value="RunAndDesignTime"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="res2go IDE plug-in
+"/>
+    <Version Major="1" Release="15"/>
+    <Files Count="6">
+      <Item1>
+        <Filename Value="res2gomain.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="res2gomain"/>
+      </Item1>
+      <Item2>
+        <Filename Value="res2goplugin.pas"/>
+        <UnitName Value="res2goplugin"/>
+      </Item2>
+      <Item3>
+        <Filename Value="res2gooptions.pas"/>
+        <DisableI18NForLFM Value="True"/>
+        <UnitName Value="res2goOptions"/>
+      </Item3>
+      <Item4>
+        <Filename Value="usupports.pas"/>
+        <UnitName Value="usupports"/>
+      </Item4>
+      <Item5>
+        <Filename Value="ugolang.pas"/>
+        <UnitName Value="ugolang"/>
+      </Item5>
+      <Item6>
+        <Filename Value="ulangbase.pas"/>
+        <UnitName Value="uLangBase"/>
+      </Item6>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <i18n>
+      <OutDir Value="languages"/>
+      <EnableI18NForLFM Value="True"/>
+    </i18n>
+    <RequiredPkgs Count="1">
+      <Item1>
+        <PackageName Value="IDEIntf"/>
+      </Item1>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

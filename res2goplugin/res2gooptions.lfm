@@ -1,0 +1,397 @@
+object Res2goOptionsFrame: TRes2goOptionsFrame
+  Left = 0
+  Height = 1124
+  Top = 0
+  Width = 896
+  AutoSize = True
+  ClientHeight = 1124
+  ClientWidth = 896
+  DesignTimePPI = 192
+  ParentFont = False
+  TabOrder = 0
+  DesignLeft = 853
+  DesignTop = 186
+  object Panel1: TPanel
+    Left = 0
+    Height = 480
+    Top = 0
+    Width = 896
+    Align = alTop
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 480
+    ClientWidth = 896
+    ParentColor = False
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 232
+      Height = 32
+      Top = 328
+      Width = 664
+      Align = alTop
+      BorderSpacing.Left = 232
+      Caption = 'eg:  "code" or "$Path($ProjectFile())code" or "C:\LzUI" '
+    end
+    object Panel3: TPanel
+      Left = 16
+      Height = 192
+      Top = 16
+      Width = 864
+      Align = alTop
+      AutoSize = True
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 192
+      ClientWidth = 864
+      TabOrder = 0
+      object chkEanbledConvert: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 0
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Enabled Convert'
+        TabOrder = 0
+      end
+      object chkUseOriginalFileName: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 48
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Use Original File Name'
+        TabOrder = 1
+      end
+      object chkSaveGfmFile: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 96
+        Width = 864
+        Action = actSaveGfm
+        Align = alTop
+        AutoSize = False
+        Checked = True
+        State = cbChecked
+        TabOrder = 2
+      end
+      object chkUseDefaultWinAppRes: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 144
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Use default winappres'
+        Enabled = False
+        TabOrder = 3
+      end
+    end
+    object Panel4: TPanel
+      Left = 16
+      Height = 88
+      Top = 224
+      Width = 864
+      Align = alTop
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 88
+      ClientWidth = 864
+      TabOrder = 1
+      object OutputPath: TLabel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 200
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Output Path'
+        Layout = tlCenter
+      end
+      object EdtOutputPath: TDirectoryEdit
+        Left = 216
+        Height = 56
+        Top = 16
+        Width = 632
+        Directory = 'gocode'
+        ShowHidden = False
+        ButtonWidth = 46
+        NumGlyphs = 1
+        Align = alClient
+        BorderSpacing.Around = 16
+        MaxLength = 0
+        TabOrder = 0
+        Text = 'gocode'
+      end
+    end
+    object Panel5: TPanel
+      Left = 16
+      Height = 88
+      Top = 376
+      Width = 864
+      Align = alTop
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 88
+      ClientWidth = 864
+      TabOrder = 2
+      object cbbLangs: TComboBox
+        Left = 104
+        Height = 40
+        Top = 24
+        Width = 336
+        BorderSpacing.Top = 24
+        BorderSpacing.Bottom = 24
+        Enabled = False
+        ItemHeight = 32
+        ItemIndex = 0
+        Items.Strings = (
+          'Go'
+          'Nim'
+          'Rust'
+        )
+        Style = csDropDownList
+        TabOrder = 0
+        Text = 'Go'
+        Visible = False
+      end
+      object EdtPkgName: TEdit
+        Left = 216
+        Height = 56
+        Top = 16
+        Width = 632
+        Align = alClient
+        BorderSpacing.Around = 16
+        TabOrder = 1
+        Text = 'main'
+      end
+      object Label4: TLabel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 200
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Package Name'
+        Layout = tlCenter
+      end
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 584
+    Top = 486
+    Width = 896
+    Align = alTop
+    AutoSize = True
+    BevelOuter = bvNone
+    ClientHeight = 584
+    ClientWidth = 896
+    TabOrder = 1
+    object Panel6: TPanel
+      Left = 16
+      Height = 192
+      Top = 16
+      Width = 864
+      Align = alTop
+      AutoSize = True
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 192
+      ClientWidth = 864
+      TabOrder = 0
+      object chkGoUseEmbed: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 0
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Use go:embed(go1.16+)'
+        Checked = True
+        State = cbChecked
+        TabOrder = 0
+      end
+      object chkGoEnabledCGO: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 48
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Enabled CGO'
+        TabOrder = 1
+      end
+      object chkGoEnabledFinalizerOn: TCheckBox
+        Left = 0
+        Height = 48
+        Hint = 'After opening the non-component class can not call the "Free" method'
+        Top = 96
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Enabled "finalizerOn"'
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 2
+      end
+      object chkGoUseTempdll: TCheckBox
+        Left = 0
+        Height = 48
+        Top = 144
+        Width = 864
+        Align = alTop
+        AutoSize = False
+        Caption = 'Use "tempdll"'
+        Enabled = False
+        ParentShowHint = False
+        ShowHint = True
+        TabOrder = 3
+      end
+    end
+    object Panel8: TPanel
+      Left = 16
+      Height = 88
+      Top = 224
+      Width = 864
+      Align = alTop
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 88
+      ClientWidth = 864
+      TabOrder = 1
+      object Label3: TLabel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 200
+        Align = alLeft
+        AutoSize = False
+        Caption = 'GOROOT'
+        Layout = tlCenter
+      end
+      object edtGoRoot: TDirectoryEdit
+        Left = 216
+        Height = 56
+        Top = 16
+        Width = 632
+        ShowHidden = False
+        ButtonWidth = 46
+        NumGlyphs = 1
+        Align = alClient
+        BorderSpacing.Around = 16
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+    object Panel7: TPanel
+      Left = 16
+      Height = 88
+      Top = 328
+      Width = 864
+      Align = alTop
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 88
+      ClientWidth = 864
+      TabOrder = 2
+      object Label2: TLabel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 200
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Build mode'
+        Layout = tlCenter
+      end
+      object cbbGoBuildModes: TComboBox
+        Left = 200
+        Height = 40
+        Top = 24
+        Width = 336
+        Align = alLeft
+        BorderSpacing.Top = 24
+        BorderSpacing.Bottom = 24
+        ItemHeight = 32
+        ItemIndex = 5
+        Items.Strings = (
+          'default'
+          'archive'
+          'c-archive'
+          'c-shared'
+          'shared'
+          'exe'
+          'pie'
+          'plugin'
+        )
+        Style = csDropDownList
+        TabOrder = 0
+        Text = 'exe'
+      end
+    end
+    object Panel9: TPanel
+      Left = 16
+      Height = 88
+      Top = 480
+      Width = 864
+      Align = alTop
+      BorderSpacing.Around = 16
+      BevelOuter = bvNone
+      ClientHeight = 88
+      ClientWidth = 864
+      TabOrder = 3
+      object Label5: TLabel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 200
+        Align = alLeft
+        AutoSize = False
+        Caption = 'Tags'
+        Layout = tlCenter
+      end
+      object EdtGoTags: TEdit
+        Left = 216
+        Height = 56
+        Top = 16
+        Width = 632
+        Align = alClient
+        BorderSpacing.Around = 16
+        TabOrder = 0
+      end
+    end
+    object lblBuildModeHint: TLabel
+      Left = 32
+      Height = 32
+      Top = 432
+      Width = 848
+      Align = alTop
+      BorderSpacing.Left = 16
+      BorderSpacing.Around = 16
+      Caption = 'select "exe" mode if go version >= 1.15'
+      Font.Color = clGreen
+      Layout = tlCenter
+      ParentFont = False
+    end
+  end
+  object Bevel1: TBevel
+    Left = 0
+    Height = 6
+    Top = 480
+    Width = 896
+    Align = alTop
+    Shape = bsTopLine
+  end
+  object ActionList1: TActionList
+    Left = 1168
+    Top = 144
+    object actSaveGfm: TAction
+      Caption = 'Save gfm File'
+      Checked = True
+      OnExecute = actSaveGfmExecute
+      OnUpdate = actSaveGfmUpdate
+    end
+  end
+end
