@@ -154,7 +154,11 @@ begin
     'TSynEdit', 'TSynAutoComplete', 'TSynCompletion', 'TSynAnySyn',
     'TSynPasSyn', 'TSynCppSyn', 'TSynJavaSyn', 'TSynJScriptSyn', 'TSynPythonSyn', 'TSynUNIXShellScriptSyn',
     'TSynPHPSyn', 'TSynHTMLSyn', 'TSynXMLSyn', 'TSynCssSyn', 'TSynVBSyn', 'TSynTeXSyn', 'TSynBatSyn',
-    'TSynSQLSyn'
+    'TSynSQLSyn',
+    'TChart', 'TPieSeries', 'TAreaSeries', 'TBarSeries', 'TLineSeries', 'TPolarSeries', 'TUserDrawnSeries',
+    'TConstantLine', 'TManhattanSeries', 'TBubbleSeries', 'TBoxAndWhiskerSeries', 'TOpenHighLowCloseSeries', 
+    'TFieldSeries', 'TParametricCurveSeries', 'TBSplineSeries', 'TCubicSplineSeries', 'TFitSeries',
+    'TFuncSeries', 'TColorMapSeries', 'TExpressionSeries', 'TExpressionColorMapSeries', 'TPolygonSeries'
     ]);
 end;
 
