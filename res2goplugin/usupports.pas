@@ -158,7 +158,8 @@ begin
     'TChart', 'TPieSeries', 'TAreaSeries', 'TBarSeries', 'TLineSeries', 'TPolarSeries', 'TUserDrawnSeries',
     'TConstantLine', 'TManhattanSeries', 'TBubbleSeries', 'TBoxAndWhiskerSeries', 'TOpenHighLowCloseSeries', 
     'TFieldSeries', 'TParametricCurveSeries', 'TBSplineSeries', 'TCubicSplineSeries', 'TFitSeries',
-    'TFuncSeries', 'TColorMapSeries', 'TExpressionSeries', 'TExpressionColorMapSeries', 'TPolygonSeries'
+    'TFuncSeries', 'TColorMapSeries', 'TExpressionSeries', 'TExpressionColorMapSeries', 'TPolygonSeries',
+    'TChromiumWindow','TChromium'
     ]);
 end;
 

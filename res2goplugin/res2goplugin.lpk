@@ -13,7 +13,7 @@
     </CompilerOptions>
     <Description Value="res2go IDE plug-in
 "/>
-    <Version Major="1" Release="15"/>
+    <Version Major="2"/>
     <Files Count="6">
       <Item1>
         <Filename Value="res2gomain.pas"/>
